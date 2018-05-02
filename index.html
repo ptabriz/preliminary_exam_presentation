@@ -1152,8 +1152,7 @@ data-background-size="100%">
 
 
  <aside class="notes">
-   Good morning everyone and thank you x for introduction, today I will talk
-about Immersive Tangible landscape modeling.
+
  </aside>
 </section>
 
@@ -1178,8 +1177,8 @@ Tangible Interaction</div>
 <p2> &nbsp;&nbsp;&nbsp;&nbsp; In-situ view of inundated area &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    	Surface inundation and flow model</p2>
 </div>
     <aside class="notes">
-    As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective.
-    So it is not capable of fully representing the real-world experience of geospatial feature or phenomenon, in the way that we perceive it in human view.
+      The first keyword comes to mind is perhaps the scale. As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective.
+      So we wanted to bring in the real-world human scale experience of spatial features and phenomenon.
     </aside>
 
 </section>
@@ -1193,9 +1192,9 @@ Tangible Interaction</div>
 <p>
   <p><small>Source: </i> <a href="http://www.pinsdaddy.com/landscape-architect-working_hGaVnJkWJ4Um0gbrE9EIycd9ZTWpIq0IPBDulPs%7CqEs/"> Pinsdaddy.com</a></small></p>
     <aside class="notes">
-    As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective.
-    So it is not capable of fully representing the real-world experience of geospatial feature or phenomenon, in the way that we perceive it in human view.
-    </aside>
+      Second is collobration. Landscape problems of today are complex and require interdiciplinary colloboration between designers,
+      planners, engineering and scientist. So it is important for a successful spatail decision support system to accomodate visualization tools that designers work, and 3D rendering is the utmost impotance.
+        </aside>
 </section>
 
 <section data-background="white">
@@ -1206,9 +1205,10 @@ Tangible Interaction</div>
 <p>
   <p><small>Source: </i> <a href="https://design.ncsu.edu/ah+sc/wp-content/uploads/2013/06/community-participation1-1024x587.png"> NC State design</a></small></p>
     <aside class="notes">
-    As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective.
-    So it is not capable of fully representing the real-world experience of geospatial feature or phenomenon, in the way that we perceive it in human view.
-    </aside>
+      Visualizing scenarios
+        Tools like 3D rendering and immersive virtual environment representing enviornments in a way that poeple experience everyday, leading to better understanding and engamenent,
+        and thus gives them more agency to participate in the design process.
+</aside>
 </section>
 
 <section data-background="white">
@@ -1219,9 +1219,10 @@ Tangible Interaction</div>
 <p>
   <p><small> Landscape rendering produced by Tangible landscape</small></p>
     <aside class="notes">
-    As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective.
-    So it is not capable of fully representing the real-world experience of geospatial feature or phenomenon, in the way that we perceive it in human view.
-    </aside>
+      The last and perhaps the most important implication of rendering is enabling aesthetics.
+      Abundant research has maded it crystal clear that people are not willing to accept and maintain the landscape they do not like, regardless of of its ecological value.
+      So a ecologically sound and aesthetically pleasing landscape.
+        </aside>
 </section>
 
 <section data-background="white">
@@ -1310,8 +1311,10 @@ Tangible Interaction</div>
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/Coupling_diagram.jpg">
 
     <aside class="notes">
-    Briefly describing the workflow, GRASS GIS and Blender are loosely coupled through file-based communication. As user interacts with the tangible model or objects, GRASS GIS sends a copy of the geo-coordinated information or simulation to a specified system directory.
-    We implemented a monitoring module in blender scripting environment that constantly watches the directory, identifies the type of incoming information, and apply relevant operations needed to update the 3d model. The input data can range from geospatial features like a raster or a point cloud, simple coordinates as a text file, or signals that prompt a command such as removing an object from the scene.
+      Briefly describing the workflow, GRASS GIS and Blender are loosely coupled through file-based communication.
+      As user interacts with the tangible model or objects, GRASS GIS sends a copy of the geo-coordinated information or simulation to a specified system
+      directory. A monitoring module in blender scripting environment that constantly watches the directory,
+      identifies the type of incoming information, and apply relevant operations needed to update the 3d model.
     </aside>
 
 </section>
@@ -1367,11 +1370,12 @@ Tangible Interaction</div>
 <!-- <video data-autoplay  width="800" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/water2.mp4" frameborder="0"></iframe> -->
 
    <aside class="notes">
-    Now lets see how some of the landscape features are processed through the application.
-    For example, when landscape is manipulated with hand, a geotiff raster and a polygon related to water is processed.
-    As users carves the landscape, Water flow and accumulation simulations are continuously projected onto the physical model.
-    Numeric indicators about the depth and surface area of the retained water is projected.
-    At the same time, point-cloud and water polygon is transferred to blender update the 3D model.
+     I will briefly describe the features of the coupling application and possible ways that tangible interaction and GIS simulartions are turned into 3D rendering.
+     For example, when landscape is manipulated with hand, a geotiff raster and a polygon related to water is processed.
+     As users carves the landscape, Water flow and accumulation simulations are continuously projected onto the physical model.
+     Numeric indicators about the depth and surface area of the retained water is projected.
+     At the same time, point-cloud and water polygon is transferred to blender update the 3D model.
+
    </aside>
 
 </section>
@@ -1403,12 +1407,11 @@ Tangible Interaction</div>
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/coupling_case3.jpg">
 
  <aside class="notes">
- (Show the trail and wooden cubes.)
- Additionally users can uses tangible objects, in this case wooden cubes to designtate a pathway, in this example a baord walk.
- As user inserts each of the chekpoints, Grass GIS, recalculetes and projects an optimal route using an algorithm that computes the least cost walking path.
- A profile of the road and the slope of the segments are projected as feedback (show them).
 
- Additionally, the polyline feature is processed in Blender as a walktrough simulation that can viewed on screen or in HMD.
+   Additionally users can uses tangible objects, in this case wooden cubes to designtate a linear features, in this example a baord walk.
+   As user inserts each of the chekpoints, Grass GIS, recalculetes and projects an optimal route using an algorithm that computes the least cost walking path.
+   A profile of the road and the slope of the segments are projected as feedback (show them).
+   Additionally, the polyline feature is processed in Blender as a walktrough simulation that can viewed on screen or in HMD.
 
  </aside>
 
@@ -1433,10 +1436,9 @@ Tangible Interaction</div>
    <video data-autoplay class="stretch"  src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/video/immersion.mp4" frameborder="0" loop="loop"></iframe>
 
 <aside class="notes">
-Using a virtual reality addon, blender viewport is continuously displayed in both viewport and headmounted display,
-so users can pick up the headset and get immersed in their prefered views.
-One additional camera is also set to follow the imported trail feature to initiate a walkthrough animation if required.
-</aside>
+  Using a virtual reality addon, blender viewport is continuously displayed in both viewport and headmounted display,
+  so users can pick up the headset and get immersed in their prefered views.
+  One additional camera is also set to follow the imported trail feature to initiate a walkthrough animation if required.
 </section>
 
 <!----SLIDE 23 Realism--
@@ -1448,7 +1450,7 @@ One additional camera is also set to follow the imported trail feature to initia
 
 </section>-->
 
-<section data-background="white">
+<!-- <section data-background="white">
 <h2> Realism </h2>
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/coupling_case5.jpg">
 
@@ -1458,7 +1460,7 @@ Optionally, user can manipulate degree of realism. We assigned each 3D feature f
 Both low-poly models and blender scene are rendered in realtime and update almost instantly.
 
 </aside>
-</section>
+</section> -->
 
 <section data-background="white" data-transition="fade-out" >
 <h2> Landscape Design case-study</h2>
@@ -1466,6 +1468,11 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <p>Spring Hill house site (NC Japan Center), Raleigh, NC</p>
 <aside class="notes">
 </aside>
+
+As an example, Let me walk you through how a site design example
+where a Landscape designer and scientist worked together on a
+small area in the park.
+
 </section>
 
 <section data-background="white" data-transition="fade-in" >
@@ -1473,6 +1480,9 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <p>Changing landform and hydrology</p>
 <aside class="notes">
 </aside>
+In the first step,they changed the landform to create a pond, and direct the road runoff to the pond,
+they used the excavation soil to create artificial mounds to buffer the site adjacent roads, and reinforce the entrance views.
+
 </section>
 
 <section data-background="white" data-transition="fade-in" >
@@ -1480,12 +1490,15 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <p>Exploring views from the park site entrances</p>
 <aside class="notes">
 </aside>
+Then they planted four diffrent plant species using felt pieces while exploring the bio diversity measures.
+Using a wooden marker, the sited a shelter in the site.
 </section>
 
 <section data-background="white" data-transition="fade-in" >
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process3.png">
 <p>Planting trees and siting the shelter </p>
 <aside class="notes">
+
 </aside>
 </section>
 
@@ -1500,6 +1513,9 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process7.png">
 <p>Evaluation of design scenarios</p>
 <aside class="notes">
+While tangible landscape allows for rapidly exploring various scenarious, these scenarios can be compared against each other to
+support better decisions. Spatial analysis such as landscape metrics, Site hydology maps, amount of reunoff saved can be colloboratively balanced
+to create a landscape that works and is appealing.
 </aside>
 </section>
 
@@ -1519,7 +1535,7 @@ ACADIA, Proceedings of the 37th Annual Conference of the Association
     for Computer Aided Design in Architecture, Cambridge, MA. </p2>
 <br><br>
 <p2><highlight style = "background-color:#eac95b"> Chapter 5.</highlight> <strong>Tabrizian, P.</strong> (forthcoming).<a href= "https://www.springer.com/us/book/9783319893020" > Realtime 3D modeling, VR and immersion </a>. In :
-  Petrasova, A, Harmon, B., Petras, V, Tabrizian, P, Mitasova, H. </i> Tangible Modeling with Open Source GIS </i>, Springer, NY (Chapter 5)
+  Petrasova, A, Harmon, B., Petras, V, Tabrizian, P, Mitasova, H. </i> Tangible Modeling with Open Source GIS </i>, Springer, NY.
 </p2><br><br>
 
 <p2>Tateosian, L.,
@@ -1529,9 +1545,8 @@ ACADIA, Proceedings of the 37th Annual Conference of the Association
  <br></p2></a>
 <br>
 <h3>Software</h3>
-<p2>Tangible Landscape addon in blender addon
-  <a href = "https://www.sciencedirect.com/science/article/pii/S0272494418300124?via%3Dihub">Exploring perceived restoration potential of urban green enclosure through immersive virtual environments.
-  Journal of Environmental Psychology, 55, 99-109.
+<p2>Realtime 3D rendering and immersion with Tangible Landscape.
+  <a href = "https://www.sciencedirect.com/science/article/pii/S0272494418300124?via%3Dihub">Tangible Landscape Blender addon.
 <br></p2></a>
 <br>
 </section>
@@ -1550,6 +1565,24 @@ ACADIA, Proceedings of the 37th Annual Conference of the Association
 <li> <a>~ 15 Sep</a>- Final oral exam
 </ul>
 </section>
+
+<section data-background="white" >
+<h3>Aesthetics, socio-cultural norms and action</h3>
+<img width="49%" src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/nassaur_1.png">
+<img width="40%" src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/nassaur_2.png">
+
+<br><br><br><br><br><br>
+ <p><small> Meentemeyer, et al. (2013), </i> <a href="https://www.tandfonline.com/doi/abs/10.1080/00045608.2012.707591">FUTURES: multilevel simulations of emerging urban–rural landscape structure using a stochastic patch-growing algorithm.</a></small></p>
+
+<aside class="notes">
+In our next example, we scale up a bit to explore 3D rendering with a dynamic Urban-rural growth model, called FUTURES.
+Developed by Meentemeyer et al., FUTURES in 2013 is an open source urban growth model specifically designed to capture the spatial structure of development.
+FUTURES has been has been implemented in GRASS GIS and coupled with Tangible landscape.
+The case study is the Buncombe county region located in the North West of North Carolina with 660 Sq miles area.
+
+</aside>
+</section>
+
 
 <section data-background-video = "https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/video/case_study_video.mp4" frameborder="0">
   <h3 class="shadow"> </h3>
