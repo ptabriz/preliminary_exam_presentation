@@ -399,7 +399,7 @@ Tangible immersion for ecological design </p2>
   <aside class="notes">
 
 
-As a quick recap about dissertation content,
+As a quick recap about the content,
 The dissertation will include four papers,
 chapters 2 and 3, will describe implmentation,
 evaluation and application of viewscape modeling for urban envrionment.
@@ -453,8 +453,8 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
 
               <aside class="notes">
 
-              let me start with a brief background of what is Viewscape modeling ?
-              Viewscape modeling can be refered to as analysis of the configuration,
+              Just a brief descirption of Viewscape modeling.
+              It can be refered to as analysis of the configuration,
               and composition of human 3D visual domain on the
               Landscape using geographic information systems or GIS.
 
@@ -492,11 +492,20 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
               despite the monuting evidence on the impact of urban spaces on human health and ecosystem services,
               there is surprisingly there is limited studies on small-scale Urban environments.
 
-              Using the ability of the state-of-the-art LiDAR data for providing a
-              detailed landscape structure and ability of
-              Immersive virtual environment to realistically
-              represent on the-ground-situation, we aimed to develop and test a
-              viewscape model that can incorporate urban complexity.
+              Also the geospatial data used is often very coarse and cannot be used to model
+              fine-granied and heterogenous landcover
+
+              Also, the GIS approach is objective and cannot adequately reflect the human perceptions
+
+              And few studies that integrated subjective analysis are mainly
+              focused on aesthetic appeal and overlook other important perceptions
+
+              At the same advancemnet in remote sensing like LiDAR data can be used to create
+              a high-resolution 3D model of the landscape.
+              While visualization tool like Immersive virtual environment can be used to realistically
+              represent on the-ground-situation, and elicit human perceptions.
+
+
               </aside>
 
               </section>
@@ -547,8 +556,8 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                       Dorothea Dix park, Raleigh, NC, 308 acres
 
               <aside class="notes">
-                  Our case study is Dorothea Dix park in Raleigh, North Carolina.
-                  Covering more than 308 acres, the site can be charactrised by a heterogenous landcover and topography.
+                  The case study I chose is Dorothea Dix park in Raleigh, North Carolina.
+                  It is an ideal site beacuase it has a very heterogoneous landcover with highly built to lush areas. And it has a relatively small to medium size.
               </aside>
 
                   </ul>
@@ -591,7 +600,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                    </ul>
 
                    <aside class="notes">
-                   We interpolated the lidar points to acquire a 0.5 meter resolution surface model.
+                   Then, I  interpolated the lidar points to acquire a 0.5 meter resolution surface model.
                    </aside>
               </section>
 
@@ -603,7 +612,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                      0.5m Digital surface model (DSM)
                    </ul>
                    <aside class="notes">
-                   A Ill known limitation of interpolated surfaces are the way that trees are represented.
+                   A well known limitation of interpolated surfaces are the way that trees are represented.
                    For example, lets look closer at a row of Willow Oaks planted along the street.
                    </aside>
               </section>
@@ -1255,6 +1264,20 @@ Tangible Interaction</div>
     </aside>
 </section>
 
+<section  data-background="white">
+<h2 style="color: #888">
+    Tangible Landscape </h2>
+<img height="350px" src="https://github.com/ptabriz/IDEO_presentation/raw/master/img/system_setup.png" > &nbsp;&nbsp;&nbsp;
+<video data-autoplay width="600" height="380" controls muted>
+  <source src="https://github.com/ptabriz/IDEO_presentation/raw/master/img/tl_video.mp4" type="video/mp4" data-background-video-loop="loop">
+</video>
+<ul>
+  <li> Embodied and intuitive interaction, rapid sketching and feedback
+  <li> Realtime streaming of GIS data
+  <li> User-centered, collaborative
+  <li> Robust open-source computation backend
+</section>
+
 <section data-background="white">
   <h3> Aims and objectives </h3>
 <ul>
@@ -1274,6 +1297,8 @@ Tangible Interaction</div>
   <li> Demonstrate the method's functionality using a design case-study
   </ul>
 </section>
+
+
 
 <!-- --SLIDE 13-- Physical setup -->
 
@@ -1329,25 +1354,17 @@ Tangible Interaction</div>
 <h2> Procedural 3D modeling workflow  </h2>
 <img  style = "width:90%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/3d_procedure.jpg">
 
-</section>
-
-
-<section data-background="white">
-<h2> Software Architecture </h2>
-<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/Coupling_diagram.jpg">
-
-    <aside class="notes">
-      Briefly describing the workflow, GRASS GIS and Blender are loosely coupled through file-based communication.
-      As user interacts with the tangible model or objects, GRASS GIS sends a copy of the geo-coordinated information or simulation to a specified system
-      directory. A monitoring module in blender scripting environment that constantly watches the directory,
-      identifies the type of incoming information, and apply relevant operations needed to update the 3d model.
-    </aside>
+<aside class="notes">
+  Briefly describing the workflow, GIS software and Blender, a 3D modeling and rendering software, coupled through file-based communication.
+  As user interacts with the tangible model or objects, GRASS GIS sends a copy of the geo-coordinated information or simulation to a specified system
+  directory. A monitoring module in blender scripting environment that constantly watches the directory,
+  identifies the type of incoming information, and apply relevant operations needed to update the 3d model.
+</aside>
 
 </section>
 
-
-<section data-background="white">
-<h2>Coupling with Tangible Landscape </h2>
+<!--<section data-background="white">
+ <h2>Coupling with Tangible Landscape </h2>
 
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/New_setup.png">
 
@@ -1356,7 +1373,7 @@ Tangible Interaction</div>
     to the tangible landscape setup with outputs to a display and an immersive virtual reality headset.
     </aside>
 
-</section>
+</section> -->
 
 <!--<section data-background="white">
 <h2> Coupling with Tangible Landscape  </h2>
@@ -1388,12 +1405,10 @@ Tangible Interaction</div>
 <!-- <video data-autoplay  width="800" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/water2.mp4" frameborder="0"></iframe> -->
 
    <aside class="notes">
-     I will briefly describe the features of the coupling application and possible ways that tangible interaction and GIS simulartions are turned into 3D rendering.
-     For example, when landscape is manipulated with hand, a geotiff raster and a polygon related to water is processed.
+     I will briefly describe the features of the coupling application and example of ways that tangible interaction and GIS data simulations are turned into 3D rendering.
      As users carves the landscape, Water flow and accumulation simulations are continuously projected onto the physical model.
      Numeric indicators about the depth and surface area of the retained water is projected.
      At the same time, point-cloud and water polygon is transferred to blender update the 3D model.
-
    </aside>
 
 </section>
@@ -1405,15 +1420,13 @@ Tangible Interaction</div>
 
   <aside class="notes">
 
-  Users can design tree patches using colored felt pieces. They can either draw and cut their prefered shapes using scissors, or select from a library of cutouts with various shapes.
-  Each color represents a landscape class based on National landcover datast classification, like decidous, evergreen etc. For instance in this example green denotes evergreen class and
-  eastern pine trees, red means decidous and red maple, blue represents wetland species and river birch.
-  Grass GIS applies image segmentation and classification to the scanned image to assign RGB values to their corresponding landscape classes.
-  Using landscape structure analysis I compute and project various metrics related to landscape heterogeneity, biodiversity and complexity,
+  Users can design tree patches using colored felt pieces. They can either draw and cut their prefered shapes using scissors, or select from a library
+  of cutouts with various shapes.
+  Each color represents a landscape class, like decidous, evergreen etc.
+  Tangible landscape computes and projects various metrics related to landscape heterogeneity, biodiversity and complexity,
   which as you can see is projected below the landscape model.
 
-  After importing, Blender applies a particle system modifier to populate corresponding species in each patch based on a predefined spacing and density,related to each specie.
-  Some degree of randomness is applied to the size, rotation and sucsession of species to mimic the realworld representation of a patch.
+  After importing, Blender populates corresponding species in each patch based on a predefined spacing and density.
 
   </aside>
 
@@ -1485,12 +1498,10 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/site.png">
 <p>Spring Hill house site (NC Japan Center), Raleigh, NC</p>
 <aside class="notes">
-  As an example, Let me walk you through how a site design example
-  where a Landscape designer and scientist worked together on a
-  small area in the park.
-
+  We ran couple of small pilot case-studies to see how landscape designers and engineers can work together to design a park using this system.
+  Here, I am just going to show you one of the examples of site planning for a small recreational site.
+  The site is located in Raleigh/NC in an area Adjacent to DIX park, called NC Japan center.
 </aside>
-
 
 </section>
 
@@ -1498,7 +1509,7 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process.png">
 <p>Changing landform and hydrology</p>
 <aside class="notes">
-  In the first step,they changed the landform to create a pond, and direct
+  In the first step, they changed the landform to create a pond, and direct
   the road runoff to the pond,
   they used the excavation soil to create artificial mounds to
   buffer the site adjacent roads, and reinforce the entrance views.
@@ -1511,9 +1522,7 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process2.png">
 <p>Exploring views from the park site entrances</p>
 <aside class="notes">
-  Then they planted four diffrent plant species using felt pieces while
-  exploring the bio diversity measures.
-  Using a wooden marker, the sited a shelter in the site.
+
 </aside>
 
 </section>
@@ -1522,7 +1531,9 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process3.png">
 <p>Planting trees and siting the shelter </p>
 <aside class="notes">
-
+  Then they planted four diffrent plant species using felt pieces while
+  exploring the bio diversity measures.
+  Using a wooden marker, the sited a shelter in the site.
 </aside>
 </section>
 
@@ -1573,9 +1584,16 @@ ACADIA, Proceedings of the 37th Annual Conference of the Association
   <a href = "https://github.com/ptabriz/3D_immersion_TL">Tangible Landscape Blender addon.
 <br></p2></a>
 <br>
-</section>
+
+<aside class="notes">
+Chapter 4 focuses on the technical aspects and methods related to realtime procedural modeling
+with geospatial data and simulations.
+
+Chapter 5 focuses on the framework description, its implications on ecological design, and pilot case-studies.
+</aside>
 
 </section>
+
 
 
 
