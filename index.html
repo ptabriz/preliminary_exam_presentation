@@ -539,7 +539,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
 
               </section>
 
-            <!--  <section data-background= "white">
+            <section data-background= "white">
               <h2>Study area</h2>
                 <ul>
                 <p style="float: left; font-size: 18pt; text-align: center; width: 100%; margin-right: .5%; margin-bottom: 0.5em;">
@@ -553,8 +553,8 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
 
                   </ul>
                      </ul>
-              </section> -->
-
+              </section>
+<!--
               <section data-background= "https://github.com/ptabriz/presentation_viewscape/raw/master/img/news_dix.png" data-background-size="95%">
 
                 <aside class="notes">
@@ -566,6 +566,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                 </aside>
 
               </section>
+            -->
 
               <section data-background= "white">
               <h2>Generating high-resolution DSM</h2>
@@ -575,7 +576,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                     Airborne LiDAR (North Carolina), Acquired Jan 11, 2015 (leaf-off)
 
                     <aside class="notes">
-                    In the first step, we created a detailed surface model using multiple return lidar
+                    In the first step, I created a detailed surface model using multiple return lidar
                     airborne LiDAR scanned in a single flight during leaf-off season.
                     </aside>
 
@@ -602,7 +603,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                      0.5m Digital surface model (DSM)
                    </ul>
                    <aside class="notes">
-                   A well known limitation of interpolated surfaces are the way that trees are represented.
+                   A Ill known limitation of interpolated surfaces are the way that trees are represented.
                    For example, lets look closer at a row of Willow Oaks planted along the street.
                    </aside>
               </section>
@@ -653,7 +654,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                   </ul>
 
                   <aside class="notes">
-              To overcome this issue, We inspected the LiDAR points and found that among the dominant vegetation structures in the park,
+              To overcome this issue, I inspected the LiDAR points and found that among the dominant vegetation structures in the park,
               decisuos specimen have the highest permeability.
               So the idea was to segment the trees, and replace the dicidous stands with their trunks, to overcome the visibility error.
               A process called Trunk obstruction modeling.
@@ -667,7 +668,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                   <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/dsm.png" style="width: 100%"><br>DSM</p>
 
                   <aside class="notes">
-              We applied a landform detection algorithm called Geomorphons to lidar vegetaion points to detect
+              I applied a landform detection algorithm called Geomorphons to lidar vegetaion points to detect
               the tree peaks In this figure shown in dark brown dotes.
                   </aside>
               </section>
@@ -678,7 +679,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                   <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/geomorphon.png" style="width: 100%"><br>Landform analysis (Geomorphon)</p>
 
                   <aside class="notes">
-                    We applied a landform detection algorithm called Geomorphons to lidar vegetaion points to detect
+                    I applied a landform detection algorithm called Geomorphons to lidar vegetaion points to detect
                     the tree peaks In this figure shown in dark brown dotes.
 
                   </aside>
@@ -690,7 +691,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                   <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/peaks.png" style="width: 100%"><br>Extracted tree peaks</p>
 
               <aside class="notes">
-                    Then, we extracted the peaks, and using the landcover data, we replaced the decidous trees with the tree trunks in the DSM.
+                    Then, I extracted the peaks, and using the landcover data, I replaced the decidous trees with the tree trunks in the DSM.
 
               </aside>
               </section>
@@ -748,9 +749,9 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
               </p>
                     </ul>
                     <aside class="notes">
-                    In the next step we generated a detailed landcover that correspond to the DSM model and can
+                    In the next step I generated a detailed landcover that correspond to the DSM model and can
                     represent the site's landcover.
-                    We fused Lidar vegetation points, with ground cover derived from image classification of
+                    I fused Lidar vegetation points, with ground cover derived from image classification of
                     multi-band imagery, and buildings derived from vector data.
                   </aside>
               </section>
@@ -788,7 +789,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
               <section data-background="https://github.com/ptabriz/presentation_viewscape/raw/master/img/initial_sample.png" data-background-size="95%">
 
               <aside class="notes">
-              After aquiring the spatial data, we then sampled the site using a 20x20m grid and
+              After aquiring the spatial data, I then sampled the site using a 20x20m grid and
               computed the viewshed analysis and viewscape metrics for all of the grid cell's centroids.
               </aside>
 
@@ -817,7 +818,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
 
                 </table>
                 <aside class="notes">
-                We chose a set of configuration and composition metrics that are shown to be related to
+                I chose a set of configuration and composition metrics that are shown to be related to
                 human perceptions and determinant of landscape characteristics.
                 </aside>
 
@@ -910,8 +911,8 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
 
               <section data-background="https://github.com/ptabriz/presentation_viewscape/raw/master/img/ive_sample.png" data-background-size="95%">
               <aside class="notes">
-                To test how our model performs we tested it against human perception of IVE images acquired on-site.
-                Through a combination of data analysis and spatial stratification we pulled out a selection of 24 images that are repsentative of the
+                To test how our model performs I tested it against human perception of IVE images acquired on-site.
+                Through a combination of data analysis and spatial stratification I pulled out a selection of 24 images that are repsentative of the
                 viewscape values and spatial conditions in the site.
               </aside>
               </section>
@@ -926,7 +927,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cube mapping and wrapping
 
                 <aside class="notes">
-                We geolocated the points and for each point we took 360 imagery using a DSLR camera mounted on a gigapan robot,
+                I geolocated the points and for each point I took 360 imagery using a DSLR camera mounted on a gigapan robot,
                 and stiched the images to acquire a high-reolution panorama.
                 </aside>
               </section>
@@ -1000,7 +1001,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
 
 
                   <aside class="notes">
-                using a VR development software, we implemented perception surveys.
+                using a VR development software, I implemented perception surveys.
                 102 participants experienced a random presentation of the immersive scenesand rated each on
                 percieved visual access, complexity, naturalness as well as preferences.
 
@@ -1032,7 +1033,7 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
               <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/Connection_3.jpg" style="width: 100%">
 
                 <aside class="notes">
-                We geolocated the points and for each point we took 360 imagery using a DSLR camera mounted on a gigapan robot,
+                I geolocated the points and for each point I took 360 imagery using a DSLR camera mounted on a gigapan robot,
                 and stiched the images to acquire a high-reolution panorama.
                 </aside>
               </section>
@@ -1056,15 +1057,14 @@ of realtime 3D modelign with geospatial data and compuations and its implementat
               </p>
 
               <aside class="notes">
-              We used multilpe regression analysis to understand how
+              I used multiple regression analysis to understand how
               our viewscape model explains the variations in human perceptions.
 
-              We found a relatively decent results for our visual access model, as well as naturalness
-              and Aethetic preferences. Less favorable results was shown for perceived complexity.
+              Preliminary results are promissing, specially for Naturalness and visual access. Less favorable results was shown for perceived complexity.
               The models also allowed
 
               Please note that the demographic variables and personal diffrences are not
-              included in these models, and we expect that their inclusion would improve the results.
+              included in these models, and I expect that their inclusion would improve the results.
               </aside>
 
               </section>
@@ -1181,7 +1181,7 @@ Tangible Interaction</div>
 <div style="margin-right:5%;float:right;max-width:45% !important"> Realtime 3D rendering and immersion</div>
 
 <aside class="notes">
-  I will specifically discuss why and how we coupled Tangible landscape- a tangible interface for GIS and an immersive virtual environment and to make ecological design process more effective,
+  I will specifically discuss why and how I coupled Tangible landscape- a tangible interface for GIS and an immersive virtual environment and to make ecological design process more effective,
   and more imporantly how this technology can potentialy help bridging the gaps between experiential and ecological analysis of landscape.
 
 </aside>
@@ -1251,7 +1251,7 @@ Tangible Interaction</div>
   <p><small>Source: </i> <a href="https://www.tandfonline.com/doi/abs/10.1207/s15327051hci2101_4?journalCode=hciDesigning"> Visser (2010)</a></small></p>
     <aside class="notes">
     As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective.
-    So it is not capable of fully representing the real-world experience of geospatial feature or phenomenon, in the way that we perceive it in human view.
+    So it is not capable of fully representing the real-world experience of geospatial feature or phenomenon, in the way that I perceive it in human view.
     </aside>
 </section>
 
@@ -1324,6 +1324,14 @@ Tangible Interaction</div>
 </section>
 
 <!-- --SLIDE 16--Software Architecture -->
+
+<section data-background="white">
+<h2> Procedural 3D modeling workflow  </h2>
+<img  style = "width:90%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/3d_procedure.jpg">
+
+</section>
+
+
 <section data-background="white">
 <h2> Software Architecture </h2>
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/Coupling_diagram.jpg">
@@ -1337,14 +1345,6 @@ Tangible Interaction</div>
 
 </section>
 
-<section data-background="white">
-<h2> Procedural 3D modeling workflow  </h2>
-
-<img  style = "width:70%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/3d_procedure.jpg">
-
-<img style = "width:50%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/interactions.png">
-
-</section>
 
 <section data-background="white">
 <h2>Coupling with Tangible Landscape </h2>
@@ -1352,13 +1352,13 @@ Tangible Interaction</div>
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/New_setup.png">
 
     <aside class="notes">
-    For implementing the concept, we added a 3D modeling and game engine software, called blender,
+    For implementing the concept, I added a 3D modeling and game engine software, called blender,
     to the tangible landscape setup with outputs to a display and an immersive virtual reality headset.
     </aside>
 
 </section>
 
-<section data-background="white">
+<!--<section data-background="white">
 <h2> Coupling with Tangible Landscape  </h2>
 
 <img style = "width:70%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/interactions.png">
@@ -1378,7 +1378,7 @@ Tangible Interaction</div>
 </table>
 </ul>
 
-</section>
+</section>-->
 
 <!-- --SLIDE 18--Landforms -->
 
@@ -1409,7 +1409,7 @@ Tangible Interaction</div>
   Each color represents a landscape class based on National landcover datast classification, like decidous, evergreen etc. For instance in this example green denotes evergreen class and
   eastern pine trees, red means decidous and red maple, blue represents wetland species and river birch.
   Grass GIS applies image segmentation and classification to the scanned image to assign RGB values to their corresponding landscape classes.
-  Using landscape structure analysis we compute and project various metrics related to landscape heterogeneity, biodiversity and complexity,
+  Using landscape structure analysis I compute and project various metrics related to landscape heterogeneity, biodiversity and complexity,
   which as you can see is projected below the landscape model.
 
   After importing, Blender applies a particle system modifier to populate corresponding species in each patch based on a predefined spacing and density,related to each specie.
@@ -1442,7 +1442,7 @@ Tangible Interaction</div>
 
  <aside class="notes">
    The 3D model is interactive so anytime during the interaction users can freely navigate in the environment and explore diffrent vantage points using the mouse.
-   But we wanted to keep that feature interactive as well. We used wooden marker with colored tip, that denotes the viewers location and direction of view.
+   But I wanted to keep that feature interactive as well. I used wooden marker with colored tip, that denotes the viewers location and direction of view.
    The feature is exported as a polyline feature. Once imported in blender, The scene camera is then relocated to the line’s starting point and the direction of view is aligned to the line’s endpoint.
  </aside>
 
@@ -1474,7 +1474,7 @@ Tangible Interaction</div>
 
 <aside class="notes">
 
-Optionally, user can manipulate degree of realism. We assigned each 3D feature from the sky to the trees to a low-poly counterpart.
+Optionally, user can manipulate degree of realism. I assigned each 3D feature from the sky to the trees to a low-poly counterpart.
 Both low-poly models and blender scene are rendered in realtime and update almost instantly.
 
 </aside>
@@ -1485,11 +1485,12 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/site.png">
 <p>Spring Hill house site (NC Japan Center), Raleigh, NC</p>
 <aside class="notes">
+  As an example, Let me walk you through how a site design example
+  where a Landscape designer and scientist worked together on a
+  small area in the park.
+
 </aside>
 
-As an example, Let me walk you through how a site design example
-where a Landscape designer and scientist worked together on a
-small area in the park.
 
 </section>
 
@@ -1497,9 +1498,12 @@ small area in the park.
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process.png">
 <p>Changing landform and hydrology</p>
 <aside class="notes">
+  In the first step,they changed the landform to create a pond, and direct
+  the road runoff to the pond,
+  they used the excavation soil to create artificial mounds to
+  buffer the site adjacent roads, and reinforce the entrance views.
 </aside>
-In the first step,they changed the landform to create a pond, and direct the road runoff to the pond,
-they used the excavation soil to create artificial mounds to buffer the site adjacent roads, and reinforce the entrance views.
+
 
 </section>
 
@@ -1507,9 +1511,11 @@ they used the excavation soil to create artificial mounds to buffer the site adj
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process2.png">
 <p>Exploring views from the park site entrances</p>
 <aside class="notes">
+  Then they planted four diffrent plant species using felt pieces while
+  exploring the bio diversity measures.
+  Using a wooden marker, the sited a shelter in the site.
 </aside>
-Then they planted four diffrent plant species using felt pieces while exploring the bio diversity measures.
-Using a wooden marker, the sited a shelter in the site.
+
 </section>
 
 <section data-background="white" data-transition="fade-in" >
@@ -1596,7 +1602,7 @@ ACADIA, Proceedings of the 37th Annual Conference of the Association
   <a href="https://www.semanticscholar.org/paper/The-shared-landscape%3A-what-does-aesthetics-have-to-Gobster-Nassauer/5d6a33b91e26b1d707805926b3ff54a6d6ad8d16">The shared landscape: what does aesthetics have to do with ecology?</a></small></p>
 
 <aside class="notes">
-In our next example, we scale up a bit to explore 3D rendering with a dynamic Urban-rural growth model, called FUTURES.
+In our next example, I scale up a bit to explore 3D rendering with a dynamic Urban-rural growth model, called FUTURES.
 Developed by Meentemeyer et al., FUTURES in 2013 is an open source urban growth model specifically designed to capture the spatial structure of development.
 FUTURES has been has been implemented in GRASS GIS and coupled with Tangible landscape.
 The case study is the Buncombe county region located in the North West of North Carolina with 660 Sq miles area.
@@ -1628,7 +1634,7 @@ Florida, USA.</p></small>
   Participatory 3D model of Tobago seen as time capsule</p></small>
 
 <aside class="notes">
-In our next example, we scale up a bit to explore 3D rendering with a dynamic Urban-rural growth model, called FUTURES.
+In our next example, I scale up a bit to explore 3D rendering with a dynamic Urban-rural growth model, called FUTURES.
 Developed by Meentemeyer et al., FUTURES in 2013 is an open source urban growth model specifically designed to capture the spatial structure of development.
 FUTURES has been has been implemented in GRASS GIS and coupled with Tangible landscape.
 The case study is the Buncombe county region located in the North West of North Carolina with 660 Sq miles area.
@@ -1728,7 +1734,7 @@ The case study is the Buncombe county region located in the North West of North 
 <img width="20%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/logos/gpl.png">
 <aside class="notes">
 
-This system and all other development made by our team is free and open source and we are committed to help you setting up your own Tangible landscape system.
+This system and all other development made by our team is free and open source and I are committed to help you setting up your own Tangible landscape system.
 </aside>
 
 </section>
